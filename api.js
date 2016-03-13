@@ -1,12 +1,19 @@
+
+
+
+
 $(document).ready(function(){
   $.ajax({
     type: "GET",
-    url: "https//api.github.com/orgs/facebook/repos",
+    url: "https://api.forecast.io/forecast/3078412bdf77c7710a96da902df7f6c7/LATITUDE,LONGITUDE
+",
     success: function(repos){
       console.log("this is works");
     },
       error: function(jqXHR, textStatus, erroThrown){
-        alert("this works")
+        console.log(jqXHR);
+        console.log(textStatus);
+        console.log(errorThrown);
       }
   })
 })
