@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $.ajax({
     type: "GET",
-    url: "https://api.github.com/orgs/facebook/repos",
+    url: "https://api.github.com/users/Marcode777/repos",
     success: function(repos){ 
       for(var i=0; i<repos.length; i++){
         var newRepoUrl = buildRepoUrl(repos[i])
