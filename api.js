@@ -8,7 +8,7 @@ $(document).ready(function(){
         $(".list-group").append(newRepoUrl); 
       }
     },
-      error: function(jqXHR, textStatus, erroThrown){
+      error: function(jqXHR, textStatus, errorThrown){
         console.log(jqXHR);
         console.log(textStatus);
         console.log(errorThrown);
